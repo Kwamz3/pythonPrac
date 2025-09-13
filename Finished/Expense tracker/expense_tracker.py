@@ -49,7 +49,7 @@ def view_expenses(expenses):
         return
     
     for i, exp in enumerate(expenses, 1):
-        print(f"{i}.{exp['date']} | {exp['category']} | ${exp['amount']:.2f} | {exp['notes']}")
+        print(f"{i}.{exp['date']} | {exp['category']} | ${exp['amount']:.2f} | {exp['notes']}") 
         
         
 def filter_by_category(expenses):
