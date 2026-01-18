@@ -243,11 +243,78 @@
 #     "white": "#FFFFFF",
 # }
 
-colors: dict[str, tuple[int, int, int]] = {
-    "Red": (255, 0, 0),
-    "Green": (0, 255, 0),
-    "Blue": (0, 0, 255),
-    "Yellow": (255, 255, 0),
-    "Black": (0, 0, 0),
-    "White": (255, 255, 255),
-}
+# colors: dict[str, tuple[int, int, int]] = {
+#     "Red": (255, 0, 0),
+#     "Green": (0, 255, 0),
+#     "Blue": (0, 0, 255),
+#     "Yellow": (255, 255, 0),
+#     "Black": (0, 0, 0),
+#     "White": (255, 255, 255),
+# }
+
+
+# tuple unpacking allows the creation of multiple variables to be used in an iterable of values
+# person = ("Jane", 25, "Python Dev")
+# name, age, job = person
+# print(age)
+
+
+# we can also use this to swap the values in variables
+# fruits = ("apple", "banana", "orange", "guava")
+# fruit_1, fruit_2, fruit_3, fruit_4 = fruits
+
+# fruit_3, fruit_1 = fruit_2, fruit_4
+# print(fruit_1)
+
+
+# assignment expressions allow us to declare the result of conditionals and while loops into a name in one step
+# line = input("Type some text: ")
+
+# while line != "stop":
+#     print(line)
+#     line = input("Type some text: ")
+
+# the cassigned expression in use 
+# while (line := input("Type some text: ")) != "stop":
+#     print(line)
+
+
+# global variables are declared on the module level
+# value = 42
+# print(dir())
+# ''' ['__annotations__',
+#     '__builtins__',
+#     '__cached__',
+#     '__doc__',
+#     '__file__',
+#     '__loader__',
+#     '__name__',
+#     '__package__',
+#     '__spec__',
+#     'value'] '''
+
+
+# local variables are declared in functions
+# def function():
+#     integer = 42
+#     print(integer)
+
+# function()
+
+# integer # NameError: name 'integer' is not defined
+
+
+# a general example illustrating global, local, non-local scope
+# Global scope
+global_variable = "global"
+
+def outer_func():
+    # Nonlocal scope
+    nonlocal_variable = "nonlocal"
+    def inner_func():
+        # Local scope
+        local_variable = "local"
+        print(f"Hi from the '{local_variable}' scope!")
+        print(f"Hi from the '{nonlocal_variable}' scope!")
+        print(f"Hi from the '{global_variable}' scope!")
+    inner_func()
