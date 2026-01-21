@@ -306,15 +306,58 @@
 
 # a general example illustrating global, local, non-local scope
 # Global scope
-global_variable = "global"
+# global_variable = "global"
 
-def outer_func():
-    # Nonlocal scope
-    nonlocal_variable = "nonlocal"
-    def inner_func():
-        # Local scope
-        local_variable = "local"
-        print(f"Hi from the '{local_variable}' scope!")
-        print(f"Hi from the '{nonlocal_variable}' scope!")
-        print(f"Hi from the '{global_variable}' scope!")
-    inner_func()
+# def outer_func():
+#     # Nonlocal scope
+#     nonlocal_variable = "nonlocal"
+#     def inner_func():
+#         # Local scope
+#         local_variable = "local"
+#         print(f"Hi from the '{local_variable}' scope!")
+#         print(f"Hi from the '{nonlocal_variable}' scope!")
+#         print(f"Hi from the '{global_variable}' scope!")
+#         inner_func()
+        
+        
+# class attributes are variables that are declaered at class level
+# instance attributes are variables that are attached to instances of a given class
+# class Employee:
+#     count = 0
+
+#     def __init__(self, name, position, salary):
+#         self.name = name
+#         self.position = position
+#         self.salary = salary
+#         Employee.count += 1
+
+#     def display_profile(self):
+#         print(f"Name: {self.name}")
+#         print(f"Position: {self.position}")
+#         print(f"Salary: ${self.salary}") 
+    
+    
+class Players:
+    count = 0
+    
+    def __init__(self, control, speed, shot_power):
+        self.control = control
+        self.speed = speed
+        self.shot_power = shot_power
+        Players.count += 1
+        
+    def display_self(self):
+        print(f"Control: {self.control}")
+        print(f"Speed: {self.speed}")
+        print(f"Shot Power: {self.shot_power}")
+        
+
+jake = Players(67, 75, 87)
+mike = Players(57, 65, 89)
+fred = Players(87, 60, 69)
+
+# jake.display_self()
+# mike.display_self()
+# fred.display_self()
+
+print(f"Total players: {Players.count}")
