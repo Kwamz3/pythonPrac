@@ -92,7 +92,23 @@
 # print(c)
 
 
-# combining string and integers with the use of the format method
-age = 36
-txt = f"My name is John, I am {age}"
+# # combining string and integers with the use of the format method
+# age = 36
+# txt = f"My name is John, I am {age}"
+# print(txt)
+
+
+# # the placeholder can also include a modifier
+# price = 59
+# txt = f"The price is ${price:.2f} dollars"
+# print(txt)
+
+
+# # it can also be a whole operation
+# txt = f"The price is {20 * 59} dollars"
+# print(txt)
+
+
+# use the escape(backslash) to escape illegal characters
+txt = "We are the so-called \"Vikings\" from the north."
 print(txt)
