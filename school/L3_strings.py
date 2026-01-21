@@ -42,6 +42,26 @@
 # print(b[:5])
 
 
-# start slicing from position 2 till the end
-b = "Hello, World!"
-print(b[2:])
+# # start slicing from position 2 till the end
+# b = "Hello, World!"
+# print(b[2:])
+
+# # start slicing from the end of the string with the negative sign
+# # same exclusion applies with the negative sign 
+# b = "Hello, World!"
+# print(b[-5:-2])
+
+
+# # returns the string in upper case
+# a = "Hello, World!"
+# print(a.upper())
+
+
+# returns the string in lower case
+# a = "Hello, World!"
+# print(a.lower())
+
+
+# remove whitespaces from the string
+a = " d Hello, World! "
+print(a.strip())
