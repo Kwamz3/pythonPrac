@@ -116,13 +116,6 @@
 # for color in colors:
 #      print(color)
 
-# ''' red
-#     orange
-#     yellow
-#     green
-#     blue
-#     indigo
-#     violet '''
 
 # cars = [
 #     "Toyota",
@@ -135,12 +128,6 @@
 # for index, car in enumerate(cars):
 #     index += 1
 #     print(index, car)
-    
-# ''' 1 Toyota
-#     2 Benz
-#     3 Ford
-#     4 Pontiac
-#     5 BYD '''
 
 
 # count = 5
@@ -148,12 +135,6 @@
 # while count:
 #     print(count)
 #     count -= 1
-
-# ''' 5
-#     4
-#     3
-#     2
-#     1 '''
 
 
 # contacts = [
@@ -167,20 +148,6 @@
 # for contact in contacts:
 #      print(contact)
 
-# ''' ('Linda', '111-2222-3333', 'linda@example.com')
-# ('Joe', '111-2222-3333', 'joe@example.com')
-# ('Lara', '111-2222-3333', 'lara@example.com')
-# ('David', '111-2222-3333', 'david@example.com')
-# ('Jane', '111-2222-3333', 'jane@example.com') '''
-
-# for name, phone, email in contacts:
-#      print(phone, name)
-
-# ''' 111-2222-3333 Linda
-# 111-2222-3333 Joe
-# 111-2222-3333 Lara
-# 111-2222-3333 David
-# 111-2222-3333 Jane '''
 
 # information = [
 #      ("Charles", 18, "likes ball"),
@@ -197,7 +164,7 @@
 #      print(name, age)
 
 
-# using module level variables restricts direct access to the non-public variable
+## using module level variables restricts direct access to the non-public variable
 # _timeout = 30
 
 # def get_timeout():
@@ -212,11 +179,11 @@
 # set_timeout(10)
 
 
-# if you would like to use a keyword for naming a variable you'll need to follow it with an underscore
+## if you would like to use a keyword for naming a variable you'll need to follow it with an underscore
 # class_ = "name"
 
 
-# for some soft keywords like match it only matters in structural pattern matching
+## for some soft keywords like match it only matters in structural pattern matching
 # import re
 
 # text = "Some text containing a number: 123"
@@ -228,12 +195,12 @@
 #     print("No match found 😔")
 
 
-# for all the built-in names
+## for all the built-in names
 # import builtins
 # print(dir(builtins))
 
 
-# here we're explicitly stating that our colors dictionary will be made up of string key and string values
+## here we're explicitly stating that our colors dictionary will be made up of string key and string values
 # colors: dict[str, str] = {
 #     "red": "#FF0000",
 #     "green": "#00FF00",
@@ -253,13 +220,13 @@
 # }
 
 
-# tuple unpacking allows the creation of multiple variables to be used in an iterable of values
+## tuple unpacking allows the creation of multiple variables to be used in an iterable of values
 # person = ("Jane", 25, "Python Dev")
 # name, age, job = person
 # print(age)
 
 
-# we can also use this to swap the values in variables
+## we can also use this to swap the values in variables
 # fruits = ("apple", "banana", "orange", "guava")
 # fruit_1, fruit_2, fruit_3, fruit_4 = fruits
 
@@ -267,7 +234,7 @@
 # print(fruit_1)
 
 
-# assignment expressions allow us to declare the result of conditionals and while loops into a name in one step
+## assignment expressions allow us to declare the result of conditionals and while loops into a name in one step
 # line = input("Type some text: ")
 
 # while line != "stop":
@@ -279,7 +246,7 @@
 #     print(line)
 
 
-# global variables are declared on the module level
+## global variables are declared on the module level
 # value = 42
 # print(dir())
 # ''' ['__annotations__',
@@ -294,7 +261,7 @@
 #     'value'] '''
 
 
-# local variables are declared in functions
+## local variables are declared in functions
 # def function():
 #     integer = 42
 #     print(integer)
@@ -304,8 +271,8 @@
 # integer # NameError: name 'integer' is not defined
 
 
-# a general example illustrating global, local, non-local scope
-# Global scope
+## a general example illustrating global, local, non-local scope
+## Global scope
 # global_variable = "global"
 
 # def outer_func():
@@ -320,44 +287,29 @@
 #         inner_func()
         
         
-# class attributes are variables that are declaered at class level
-# instance attributes are variables that are attached to instances of a given class
-# class Employee:
+## class attributes are variables that are declaered at class level
+## instance attributes are variables that are attached to instances of a given class
+# class Players:
 #     count = 0
-
-#     def __init__(self, name, position, salary):
-#         self.name = name
-#         self.position = position
-#         self.salary = salary
-#         Employee.count += 1
-
-#     def display_profile(self):
-#         print(f"Name: {self.name}")
-#         print(f"Position: {self.position}")
-#         print(f"Salary: ${self.salary}") 
     
-    
-class Players:
-    count = 0
-    
-    def __init__(self, control, speed, shot_power):
-        self.control = control
-        self.speed = speed
-        self.shot_power = shot_power
-        Players.count += 1
+#     def __init__(self, control, speed, shot_power):
+#         self.control = control
+#         self.speed = speed
+#         self.shot_power = shot_power
+#         Players.count += 1
         
-    def display_self(self):
-        print(f"Control: {self.control}")
-        print(f"Speed: {self.speed}")
-        print(f"Shot Power: {self.shot_power}")
+#     def display_self(self):
+#         print(f"Control: {self.control}")
+#         print(f"Speed: {self.speed}")
+#         print(f"Shot Power: {self.shot_power}")
         
 
-jake = Players(67, 75, 87)
-mike = Players(57, 65, 89)
-fred = Players(87, 60, 69)
+# jake = Players(67, 75, 87)
+# mike = Players(57, 65, 89)
+# fred = Players(87, 60, 69)
 
 # jake.display_self()
 # mike.display_self()
 # fred.display_self()
 
-print(f"Total players: {Players.count}")
+# print(f"Total players: {Players.count}")
