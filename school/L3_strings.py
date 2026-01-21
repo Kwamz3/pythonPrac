@@ -62,6 +62,37 @@
 # print(a.lower())
 
 
-# remove whitespaces from the string
-a = " d Hello, World! "
-print(a.strip())
+# # remove whitespaces from the string
+# a = " Hello, World! "
+# print(a.strip())
+
+
+# # replace the first string with the string that follows
+# # looks for what to replace before it can replace 
+# a = "Hello, World!"
+# print(a.replace("H", "J"))
+
+
+# # slpit the word where the specified character is positioned at
+# # it's also case sensitive
+# a = "Hello, World!"
+# print(a.split("W"))
+
+
+# # merging string a and string b into string c
+# a = "Hello"
+# b = "World"
+# c = a + b
+# print(c)
+
+# # merging to add whitespace
+# a = "Hello"
+# b = "World"
+# c = a + " " + b
+# print(c)
+
+
+# combining string and integers with the use of the format method
+age = 36
+txt = f"My name is John, I am {age}"
+print(txt)
