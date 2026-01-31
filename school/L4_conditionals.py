@@ -140,3 +140,23 @@
 # s = 'minor' if age < 21 else 'adult'
 
 # 'yes' if ('qux' in ['foo', 'bar', 'baz']) else 'no'
+
+
+# # coditional expressions can also be chained together 
+# x = 2
+
+# s = ('foo' if (x == 1) else
+#      'bar' if (x == 2) else
+#      'baz' if (x == 3) else
+#      'qux' if (x == 4) else
+#      'quux'
+# )
+
+# print(s)
+
+
+# # the pass keyword is used when a statement is syntatically needed but you don't want to write anything
+# if True:
+#     pass
+
+# print('foo')
