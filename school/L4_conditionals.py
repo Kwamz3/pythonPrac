@@ -95,4 +95,48 @@
 # if 'f' in 'foo': print('1'); print('2'); print('3')
 
 
-# 
+# # you can also specify multiple lines with an elif or else clause
+# x = 2
+# if x == 1: print('foo'); print('bar'); print('baz')
+# elif x == 2: print('qux'); print('quux')
+# else: print('corge'); print('grault')
+
+# x = 3
+# if x == 1: print('foo'); print('bar'); print('baz')
+# elif x == 2: print('qux'); print('quux')
+# else: print('corge'); print('grault')
+
+
+# # But fo readability sake this is the best way to write this conditional
+# x = 3
+
+# if x == 1:
+#     print('foo')
+#     print('bar')
+#     print('baz')
+# elif x == 2:
+#     print('qux')
+#     print('quux')
+# else:
+#     print('corge')
+#     print('grault')
+
+
+# # if the statement is simple enough one line is ok
+# debugging = True  # Set to True to turn debugging on.
+
+# if debugging: print('About to call function foo()')
+
+
+# # the use of conditional expressions is very helpful beacuse it acts as an operator that defines an
+# # expression rather than a control structure 
+# raining = False
+# print("Let's go to the", 'beach' if not raining else 'library')
+
+# raining = True
+# print("Let's go to the", 'beach' if not raining else 'library')
+
+# age = 12
+# s = 'minor' if age < 21 else 'adult'
+
+# 'yes' if ('qux' in ['foo', 'bar', 'baz']) else 'no'
