@@ -11,8 +11,24 @@
 # a while loop is used for a unknown number of times
 
 
-number = 5
+# # an example of a using a while loop to iterate over decreasing numbers
+# number = 5
 
-while number > 0:
-    print(number)
-    number -= 1
+# while number > 0:
+#     print(number)
+#     number -= 1
+
+
+# # because it decreses by -1 it reaches the 0 where it's checked and it when number = 0 the conditional becomes false
+# # and comes out of the loop
+# number = 5
+# while number != 0:
+#     print(number)
+#     number -= 1
+
+# # because it decreses by -2 it reaches the -1 where it's when the checking takes place number = -1 and the conditional still checks true
+# # and continues to run negative numbers
+# number = 5
+# while number != 0:
+#     print(number)
+#     number -= 2
