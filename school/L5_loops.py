@@ -10,4 +10,9 @@
 # a for loop is used for a known number of times 
 # a while loop is used for a unknown number of times
 
- 
+
+number = 5
+
+while number > 0:
+    print(number)
+    number -= 1
