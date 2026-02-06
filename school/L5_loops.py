@@ -26,9 +26,21 @@
 #     print(number)
 #     number -= 1
 
-# # because it decreses by -2 it reaches the -1 where it's when the checking takes place number = -1 and the conditional still checks true
-# # and continues to run negative numbers
+# because it decreses by -2 it reaches the -1 where it's when the checking takes place number = -1 and the conditional still checks true
+# and continues to run negative numbers
 # number = 5
 # while number != 0:
 #     print(number)
 #     number -= 2
+
+
+# the use of the break keyword
+number = 6
+
+while number > 0:
+    number -= 1
+    if number == 2:
+        break
+    print(number)
+
+print("Loop ended")
